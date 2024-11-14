@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>Kopia Paints</h1>
         <nav>
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
@@ -17,18 +19,35 @@
     </header>
     <section id="about">
         <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
+        <p>Writing my name on stuff since 2008</p>
     </section>
-    <section id="portfolio">
+    <section id="portfolio" class="gallery">
         <h2>My Work</h2>
-        <!-- Portfolio items will go here -->
-    </section>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images\20210315_151237.jpg" alt="Project 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images\20210318_132906.jpg" alt="Project 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images\20210402_160709.jpg" alt="Project 3">
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </section> 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+     <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="">
+    </div>
+   
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: kopiapaints@gmail.com</p>
     </section>
     <footer>
-        <p>&copy; Your Name, 2024</p>
+        <p>&copy; Kopia, 2024</p>
     </footer>
     <script src="scripts/script.js"></script>
 </body>
